@@ -1,0 +1,66 @@
+h1, h2, h3, h4, h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+body{
+    background: linear-gradient(45deg, white 10%, dodgerblue 75%);
+
+}
+video{
+
+
+}
+.video__wrapper-about{
+    height: 30vh;
+    overflow: hidden;
+}
+main{
+    transform: translateY(-30px);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-bottom: 35vh;
+    background-color: white;
+    padding: 10px;
+}
+.main__h1-about{
+    transform: translateY(-150px);
+    font-size: 55px;
+    background: linear-gradient(45deg, yellow 10%, whitesmoke 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main__text__bout{
+    margin: 0 15% 0 15%;
+}
+.main__text__bout--photo{
+    float: left;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 300px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.description__photo1 {
+    width: 60%;
+    background-image: url(../img/главная.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.description__photo2 {
+    width: 40%;
+    background-image: url(../img/else.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}

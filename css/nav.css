@@ -1,5 +1,5 @@
 nav{
-    display: none;
+    /*display: none;*/
 }
 .main-menu{
     position: absolute;
@@ -15,7 +15,7 @@ nav{
 }
 input#check-menu:checked  ~ div.main-menu{
     transform: translateX(0px);
-    right: 200px;
+    right: 0px;
 }
 #button:hover div.main-menu{
     right: 0;
