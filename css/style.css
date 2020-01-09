@@ -492,11 +492,12 @@ footer {
     box-sizing: border-box;
     height: 63px;
     width: 180px;
-    background: #ccc;
     border-radius: 100px;
     vertical-align: middle;
     text-align: center;
     -moz-box-sizing: content-box;
+    background-color: aliceblue;
+
 }
 
 .item1 span {
@@ -504,6 +505,8 @@ footer {
     display: inline-block;
     transform: translateY(20px);
     color: #f72359;
+    background-color: aliceblue;
+    font-family: 'Raleway', sans-serif;
 }
 
 .item2 span {
@@ -511,6 +514,8 @@ footer {
     display: inline-block;
     transform: translateY(20px);
     color: #4405f7;
+    background-color: aliceblue;
+    font-family: 'Raleway', sans-serif;
 }
 
 .wrapper_test {
@@ -518,6 +523,7 @@ footer {
 }
 
 #buttonH1 {
+    font-family: 'Raleway', sans-serif;
     vertical-align: middle;
     text-align: center;
     box-sizing: content-box;
@@ -853,17 +859,35 @@ footer {
     .footer__text__item-soc {
         transform: translateX(-20px);
     }
+    .item1 span {
+        text-decoration: none;
+        display: inline-block;
+        transform: translateY(15px);
+        color: #f72359;
+        background-color: aliceblue;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .item2 span {
+        text-decoration: none;
+        display: inline-block;
+        transform: translateY(15px);
+        color: #4405f7;
+        background-color: aliceblue;
+        font-family: 'Raleway', sans-serif;
+    }
     #test .item1, #test .item2 {
         box-sizing: border-box;
-        height: 63px;
-        width: 120px;
-        background: #ccc;
+        height: 47px;
+        width: 110px;
+        background-color: aliceblue;
         border-radius: 100px;
         vertical-align: middle;
         text-align: center;
         -moz-box-sizing: content-box;
     }
     #buttonH1 {
+        font-family: 'Raleway', sans-serif;
         vertical-align: middle;
         text-align: center;
         box-sizing: content-box;
@@ -875,7 +899,7 @@ footer {
         -moz-appearance: none;
         appearance: none;
         background: #f72359;
-        padding: .7em 1em;
+        padding: .5em 1em;
         border: none;
         color: white;
         font-size: 1.2em;
