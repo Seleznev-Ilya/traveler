@@ -10,6 +10,27 @@
    <title>Final task</title>
 </head>
 <body>
+<!--Меню-->
+
+<nav>
+   <div class = "nav__bottom">
+      <input type = "checkbox" id = "check-menu">
+      <label for="check-menu"><span>&equiv;</span></label>
+      <div class="main--menu"></div>
+      <div class = "main-menu">
+         <ul>
+            <li><a href = "#">Главная</a></li>
+            <li><a href = "about/about.html">О нас</a></li>
+            <li><a href = "#">Зачем</a></li>
+            <li><a href = "registration/form.html">Регистрация</a></li>
+            <li><a href = "#">Направления</a></li>
+            <li><a href = "#">Отзывы</a></li>
+         </ul>
+      </div>
+   </div>
+
+</nav>
+<!--Меню-->
 <header>
    <div class = "header__video">
       <div class = "header__video__text">
@@ -21,33 +42,29 @@
       </div>
       <video id = "video" muted = "muted" src = "video/3.mp4" autoplay loop></video>
    </div>
-   <a href = "#top" class = "w"></a>
+   <a href = "#" class = "w"></a>
 </header>
 <main>
-   <!--Меню-->
 
-   <nav>
-      <div class = "nav__bottom">
-         <input type = "checkbox" id = "check-menu">
-         <label for="check-menu" ><p>MENU</p></label>
-         <div class = "main-menu">
-            <ul>
-               <li><a href = "#">Главная</a></li>
-               <li><a href = "about/about.html">О нас</a></li>
-               <li><a href = "#">Зачем</a></li>
-               <li><a href = "registration/form.html">Регистрация</a></li>
-               <li><a href = "#">Направления</a></li>
-               <li><a href = "#">Отзывы</a></li>
-            </ul>
-         </div>
-      </div>
-
-   </nav>
-   <!--Меню-->
    <section class = "main__introduction">
-      <h1 class = "main_h1">Задумались о путешествии ?</h1>
+      <h1 class = "main_h1">Задумались о путешествии?</h1>
       <p class = "main_h1_p">Видеть мир вокруг, познавать его опасности, смотреть сквозь стены, находить друг друга,
          становиться ближе, чувствовать — в этом назначение жизни</p>
+      <br>
+      <div class="container">
+         <div class="wrapper_test">
+            <button id="buttonH1">
+               <span>Уже знаете куда поехать?</span>
+            </button>
+            <div id="test">
+               <a href = "#"><div class = "item1"><span>Конечно</span></div></a>
+            <a href = "#"><div class = "item2"><span>Еще нет</span></div></a>
+            </div>
+         </div>
+
+      </div>
+
+      <br>
    </section>
    <br>
    <section class = "main__description">
@@ -57,7 +74,7 @@
          </a>
          <div class = "container">
             <div class = "main__description__photo">
-               <div class = "description__photo1">
+               <div class = "description__photo1 description__photo">
                   <a href = "registration/form.html">
                      <div class = "description__photo--style photo1">
                         <h3 class = "photo__h3">Первый шаг</h3>
@@ -68,7 +85,7 @@
                      </div>
                   </a>
                </div>
-               <div class = "description__photo2">
+               <div class = "description__photo2 description__photo">
                   <a href = "about/about.html">
                      <div class = "description__photo--style photo2">
                         <h3 class = "photo__h3">О нас</h3>
@@ -101,6 +118,12 @@
                <img src = "img/epam.jpeg" alt = "" class = "slid_item">
             </div>
          </div>
+      </div>
+      <div class="buttons">
+         <ul>
+            <li><span class="lef"></span></li>
+            <li><span class="righ"></span></li>
+         </ul>
       </div>
    </section>
    <section class = "customers">

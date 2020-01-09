@@ -1,7 +1,9 @@
 * {box-sizing: border-box;}
 body {
     background: linear-gradient(100deg, dodgerblue 10%, blueviolet 35%,dodgerblue 80%);
-    height: 100vh;
+    /*height: 110%;*/
+    width: 100%;
+    overflow-x: hidden;
 }
 h1, h2, h3, h4, h5 {
     font-family: 'Raleway', sans-serif;
@@ -15,7 +17,7 @@ input{
 .decor {
     position: relative;
     max-width: 320px;
-    margin: 50px auto 0;
+    margin: 50px auto 21px;
     background: white;
     border-radius: 30px;
 }
@@ -96,4 +98,22 @@ input{
     font-weight: 500;
     font-size: 24px;
     color: #707981;
+}
+@media (max-width: 550px) {
+    .form-inner {padding: 35px;}
+    .decor {
+        position: relative;
+        max-width: 277px;
+        margin: 20px auto 0;
+        background: white;
+        border-radius: 30px;
+    }
+    .form-right-decoration {
+        top: 60px;
+        right: -21px;
+    }
+    .form-left-decoration {
+        bottom: 60px;
+        left: -22px;
+    }
 }

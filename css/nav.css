@@ -1,21 +1,38 @@
 nav{
-    /*display: none;*/
+    position: absolute;
+}
+.main--menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 65%;
+    width: 22px;
+    z-index: 24;
+}
+.main--menu:hover + .main-menu{
+    transition: 1s;
+    transform: translateX(0px);
+    right: 0;
+}
+.main-menu:hover{
+    transform: translateX(0px);
+    right: 0;
 }
 .main-menu{
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: 0px;
+    right: -20px;
     z-index: 23;
     background-color: rgba(54, 16, 88, .7);
-    height: 400px;
-    width: 200px;
+    height: 65%;
+    width: 240px;
     border-bottom-left-radius: 15px;
-    transform: translateX(200px);
+    transform: translateX(100%);
     transition: 1s;
 }
 input#check-menu:checked  ~ div.main-menu{
     transform: translateX(0px);
-    right: 0px;
+    right: 0;
 }
 #button:hover div.main-menu{
     right: 0;
@@ -26,11 +43,15 @@ input#check-menu:checked  ~ div.main-menu{
 
 .main-menu ul li{
     list-style: none;
-    color: black;
     margin: 15px 0;
 }
 .main-menu ul li a{
-    color: black;
+    /*line-height: 1.5;*/
+    /*font-size: 22px;*/
+    /*font-family: "sans-serif", 'serif';*/
+    color: white;
+    font: 24px/1.5 Arial, sans-serif;
+    text-decoration: none;
 }
 .main-menu ul li a:hover{
     color: blueviolet;
@@ -38,12 +59,19 @@ input#check-menu:checked  ~ div.main-menu{
 #check-menu{
     display: none;
 }
+label span{
+    margin-top: 3px;
+    display: inline-block;
+    font-size: xx-large;
+
+}
 label{
     position: fixed;
     bottom: 10px;
     right: 10px;
     height: 50px;
     width: 50px;
+
     border: 1px solid  rgba(226, 256, 300, .3);;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, .3);
@@ -60,4 +88,31 @@ label:hover{
 label p{
     font-size: 12px;
     margin: 18px 0  18px  ;
+}
+@media (max-height: 520px) {
+    .main-menu {
+        height: 77%;
+        padding-top: 0;
+    }
+    .main-menu ul {
+        padding-top: 0;
+    }
+    .main-menu ul li a{
+
+        font: 24px/1 Arial, sans-serif;
+    }
+}
+@media (max-height: 310px) {
+    .main-menu {
+        height: 77%;
+        padding-top: 0;
+        overflow-y: scroll;
+    }
+    .main-menu ul {
+        padding-top: 0;
+    }
+    .main-menu ul li a{
+
+        font: 24px/1 Arial, sans-serif;
+    }
 }
