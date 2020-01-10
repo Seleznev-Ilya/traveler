@@ -10,7 +10,9 @@ body {
     width: 100%;
     overflow-x: hidden;
 }
-
+main{
+    background-color: #fff;
+}
 section {
     background-color: #fff;
 }
@@ -490,8 +492,8 @@ footer {
 
 #test .item1, #test .item2 {
     box-sizing: border-box;
-    height: 63px;
-    width: 180px;
+    height: 55px;
+    width: 160px;
     border-radius: 100px;
     vertical-align: middle;
     text-align: center;
@@ -503,7 +505,7 @@ footer {
 .item1 span {
     text-decoration: none;
     display: inline-block;
-    transform: translateY(20px);
+    transform: translateY(16px);
     color: #f72359;
     background-color: aliceblue;
     font-family: 'Raleway', sans-serif;
@@ -512,7 +514,7 @@ footer {
 .item2 span {
     text-decoration: none;
     display: inline-block;
-    transform: translateY(20px);
+    transform: translateY(16px);
     color: #4405f7;
     background-color: aliceblue;
     font-family: 'Raleway', sans-serif;
@@ -573,6 +575,64 @@ footer {
 #buttonH1:hover::before {
     --w: 450px;
 }
+
+
+
+.bg{
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/why2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*position: absolute;*/
+    /*left: 0; right: 0; top: 0; bottom: 0;*/
+    /*-webkit-filter: blur(10px);*/
+    filter: blur(6px);
+    margin: 50px 0;
+
+blur(8px)
+    z-index: 0;
+}
+.bg:after{
+    content: "";
+    display: block;
+    height: 130vh;
+    width: 100%;
+    background-color: rgba(60, 60, 65, 0.6);
+
+}
+.why{
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    background: white;
+    height: 130vh;
+    margin: 50px 0;
+    width: 100%;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius:35px;
+}
+
+.why__h2{
+    /*display: none;*/
+    box-sizing: border-box;
+    background: #fff;
+    margin: 0 auto 20px;
+
+}
+.why__h2:after {
+    content: '';
+    margin: 20px auto;
+    display: block;
+    width: 27%;
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(45deg, yellow 10%, blueviolet 75%);
+}
+
+
+
+
 
 @media (min-width: 769px) {
     .description__photo1 {
@@ -893,13 +953,13 @@ footer {
         box-sizing: content-box;
         -moz-box-sizing: content-box;
         max-width: 384px;
-        margin: 20px auto 0;
+        margin: 20px auto 5px;
         position: relative;
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
         background: #f72359;
-        padding: .5em 1em;
+        padding: .7em 1em;
         border: none;
         color: white;
         font-size: 1.2em;

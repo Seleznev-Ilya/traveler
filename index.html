@@ -2,11 +2,11 @@
 <html lang = "en">
 <head>
    <meta charset = "UTF-8">
-   <link rel = "stylesheet" type = "text/css" href = "css/style.css">
-   <link rel = "stylesheet" type = "text/css" href = "css/nav.css">
-   <link rel = "stylesheet" type = "text/css" href = "css/normalize.css-master/normalize.css">
+   <link href = "css/style.css" rel = "stylesheet" type = "text/css">
+   <link href = "css/nav.css" rel = "stylesheet" type = "text/css">
+   <link href = "css/normalize.css-master/normalize.css" rel = "stylesheet" type = "text/css">
    <link href = "https://fonts.googleapis.com/css?family=Raleway|Ubuntu&display=swap" rel = "stylesheet">
-   <meta name = "viewport" content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <meta content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name = "viewport">
    <title>Final task</title>
 </head>
 <body>
@@ -14,9 +14,9 @@
 
 <nav>
    <div class = "nav__bottom">
-      <input type = "checkbox" id = "check-menu">
-      <label for="check-menu"><span>&equiv;</span></label>
-      <div class="main--menu"></div>
+      <input id = "check-menu" type = "checkbox">
+      <label for = "check-menu"><span>&equiv;</span></label>
+      <div class = "main--menu"></div>
       <div class = "main-menu">
          <ul>
             <li><a href = "#">Главная</a></li>
@@ -40,9 +40,9 @@
             <div class = "icon"></div>
          </div>
       </div>
-      <video id = "video" muted = "muted" src = "video/3.mp4" autoplay loop></video>
+      <video autoplay id = "video" loop muted = "muted" src = "video/3.mp4"></video>
    </div>
-   <a href = "#" class = "w"></a>
+   <a class = "w" href = "#"></a>
 </header>
 <main>
 
@@ -51,14 +51,18 @@
       <p class = "main_h1_p">Видеть мир вокруг, познавать его опасности, смотреть сквозь стены, находить друг друга,
          становиться ближе, чувствовать — в этом назначение жизни</p>
       <br>
-      <div class="container">
-         <div class="wrapper_test">
-            <button id="buttonH1">
+      <div class = "container">
+         <div class = "wrapper_test">
+            <button id = "buttonH1">
                <span>Уже знаете куда поехать?</span>
             </button>
-            <div id="test">
-               <a href = "#"><div class = "item1"><span>Конечно</span></div></a>
-            <a href = "#"><div class = "item2"><span>Еще нет</span></div></a>
+            <div id = "test">
+               <a href = "#">
+                  <div class = "item1"><span>Конечно</span></div>
+               </a>
+               <a href = "#">
+                  <div class = "item2"><span>Еще нет</span></div>
+               </a>
             </div>
          </div>
 
@@ -100,29 +104,37 @@
          </div>
       </div>
    </section>
+   <section class = "why">
+      <h2 class = "why__h2">Почему именно мы?</h2>
+      <div class="bg">
+
+      </div>
+
+   </section>
+
    <section class = "partner">
       <h2 class = "partner__h2">Наши партнеры</h2>
       <div class = "slider">
          <div id = "area_slider">
             <div class = "wrapper">
-               <img src = "img/старбакс.png" alt = "" class = "slid_item">
+               <img alt = "" class = "slid_item" src = "img/старбакс.png">
             </div>
 
             <div class = "wrapper ">
-               <img src = "img/NASA.svg.png" alt = "" class = "slid_item">
+               <img alt = "" class = "slid_item" src = "img/NASA.svg.png">
             </div>
             <div class = "wrapper ">
-               <img src = "img/apple.png" alt = "" class = "slid_item">
+               <img alt = "" class = "slid_item" src = "img/apple.png">
             </div>
             <div class = "wrapper ">
-               <img src = "img/epam.jpeg" alt = "" class = "slid_item">
+               <img alt = "" class = "slid_item" src = "img/epam.jpeg">
             </div>
          </div>
       </div>
-      <div class="buttons">
+      <div class = "buttons">
          <ul>
-            <li><span class="lef"></span></li>
-            <li><span class="righ"></span></li>
+            <li><span class = "lef"></span></li>
+            <li><span class = "righ"></span></li>
          </ul>
       </div>
    </section>
@@ -134,11 +146,11 @@
                <div class = "customers__box__wrapper">
                   <div class = "plane__wrapp">
                      <div class = "plane">
-                        <img class = "plane__img" src = "img/plane.png" alt = "plane">
+                        <img alt = "plane" class = "plane__img" src = "img/plane.png">
                      </div>
                   </div>
                   <div class = "earth">
-                     <img class = "earth__img" src = "img/earth.webp" alt = "">
+                     <img alt = "" class = "earth__img" src = "img/earth.webp">
                   </div>
                </div>
             </div>
@@ -163,21 +175,21 @@
          <p> Контакты:</p>
          <ul class = "footer__text__item-soc">
             <li>
-               <a href = "#"><img src = "img/11.png" alt = ""></a>
+               <a href = "#"><img alt = "" src = "img/11.png"></a>
             </li>
             <li>
-               <a href = "#"><img src = "img/22.png" alt = ""></a>
+               <a href = "#"><img alt = "" src = "img/22.png"></a>
             </li>
             <li>
-               <a href = "#"><img src = "img/33.png" alt = ""></a>
+               <a href = "#"><img alt = "" src = "img/33.png"></a>
             </li>
             <li>
-               <a href = "#"><img src = "img/44.png" alt = ""></a>
+               <a href = "#"><img alt = "" src = "img/44.png"></a>
             </li>
          </ul>
       </div>
    </div>
 </footer>
-<script rel="script"  src="main.js"></script>
+<script rel = "script" src = "main.js"></script>
 </body>
 </html>
